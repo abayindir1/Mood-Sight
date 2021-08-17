@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+.container {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ecdbba;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+#title {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  color: #c84b31;
+  font-size: 100px;
+  letter-spacing: 8px;
+  margin: 0.2em 0 0.2em 0;
+}
+
+#title::before {
+  content: "MOODUS";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    transparent 2px,
+    #346751 2px,
+    #346751 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  transition: 1s;
+}
+
+#title::after {
+  content: "MOODUS";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    transparent 2px,
+    #161616 2px,
+    #161616 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 1s;
+}
+
+#title:hover:before {
+  top: -10px;
+  left: 51%;
+}
+
+#title:hover:after {
+  top: 10px;
+  left: 49%;
+}
+
+.content h2 {
+  color: #161616;
+  font-family: "Poppins", sans-serif;
+}
+
+.content p {
+  color: #c84b31;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #ecdbba;
+  color: #346751;
+  width: 300px;
+  padding: 1%;
+  border-radius: 10em;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  border: 3px solid #c84b31;
+  transition: 1s;
+  cursor: pointer;
+}
+#sbtn {
+  background-color: #346751;
+  color: #ecdbba;
+}
+
+.btn:hover{
+    background-color: #346751;
+    color: #ecdbba;
+    border: 3px solid #346751;
+}
+
+#sbtn:hover{
+    background-color: #0e452d;
+    color: #ecdbba;
+    border: 3px solid #0e452d;
+}
+
