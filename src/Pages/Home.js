@@ -8,10 +8,9 @@ const Home = () => {
 
   const {
     REACT_APP_SPOTIFY_CLIENT_ID,
-    // REACT_APP_REDIRECT_URL,
   } = process.env;
 
-  const redirectUri = "http://localhost:3000/";
+  const redirectUri = "http://localhost:3000/songs";
   const scopes = "user-read-private user-read-recently-played";
   const scopeEncode = encodeURIComponent(scopes);
 
